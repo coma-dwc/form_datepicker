@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>予約フォーム</title>
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="form_title">セミナーお申し込みフォーム</h1>
+      <form action="#">
+        <dl class="form-area">
+          <dt>
+            <label for="name">名前</label><span>必須</span>
+          </dt>
+          <dd>
+            <input type="text" id="name" name="yourname">
+            <p id="name-error" class="error-text"></p>
+          </dd>
+          <dt>
+            <label for="tell">電話番号</label><span>必須</span>
+          </dt>
+          <dd>
+            <input type="text" id="tell-1" name="yourtell-1"> -
+            <input type="text" id="tell-2" name="yourtell-2"> -
+            <input type="text" id="tell-3" name="yourtell-3">
+            <p id="tell-error" class="error-text"></p>
+          </dd>
+        </dl>
+      </form>
+    </div>
+  </body>
+</html>
