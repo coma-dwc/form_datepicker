@@ -10,23 +10,55 @@
       <h1 class="form_title">セミナーお申し込みフォーム</h1>
       <form action="#">
         <dl class="form-area">
+          <!--名前欄-->
           <dt>
             <label for="name">名前</label><span>必須</span>
           </dt>
           <dd>
-            <input type="text" id="name" name="yourname">
+            <input type="text" id="name" name="your-name">
             <p id="name-error" class="error-text"></p>
           </dd>
+          <!--電話番号欄-->
           <dt>
             <label for="tell">電話番号</label><span>必須</span>
           </dt>
           <dd>
-            <input type="text" id="tell-1" name="yourtell-1"> -
-            <input type="text" id="tell-2" name="yourtell-2"> -
-            <input type="text" id="tell-3" name="yourtell-3">
+            <input type="text" id="tell-1" name="your-tell-1"> -
+            <input type="text" id="tell-2" name="your-tell-2"> -
+            <input type="text" id="tell-3" name="your-tell-3">
             <p id="tell-error" class="error-text"></p>
           </dd>
+          <!--予約日欄-->
+          <dt>
+            <label for="reservation">予約日</label><span>必須</span>
+          </dt>
+          <dd>
+            <input type="text" id="reservation" name="your-reservation">
+            <p id="reservation-error" class="error-text"></p>
+          </dd>
+          <!--受講形式欄-->
+          <dt>
+            <label for="seminar">受講形式</label><span>必須</span>
+          </dt>
+          <dd>
+            <input type="radio"　id="online" name="your-seminar" value="online"><label for="online">オンラインで受講</label>
+            <input type="radio"　id="venue" name="your-seminar" value="venue"><label for="venue">会場で受講</label>
+            <p id="seminar-error" class="error-text"></p>
+          </dd>
         </dl>
+
+        <!--備考欄-->
+        <div class="remarks">
+          <p>当日はオンライン会議システムを利用いたします。<br>
+            ご受講にあたり、端末とネットワーク環境が必要になりますのでご準備をお願いいたします。<br>
+            参加方法については、前日までに別途ご案内を差し上げます。
+          </p>
+        </div>
+
+        <!--申し込みボタン-->
+        <div class="button">
+          <input type="submit" value="上記の内容で申し込む">
+        </div>
       </form>
     </div>
   </body>
