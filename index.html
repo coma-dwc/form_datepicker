@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <title>予約フォーム</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
   </head>
   <body>
     <div class="content">
@@ -61,5 +63,17 @@
         </div>
       </form>
     </div>
+    <!--datepicker導入-->
+    <script src="jquery.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery.ui.datepicker-ja.min.js"></script>
+
+    <!--カレンダー表示-->
+    <script>
+	      $(function() {
+		        $.datepicker.setDefaults($.datepicker.regional["ja"]);
+		        $("#reservation").datepicker();
+	      });
+    </script>
   </body>
 </html>
